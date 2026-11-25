@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple collection of certificates and achievements.">
+  <title>Certificates | Farjana Pushon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">FP<span>.</span></a>
+    <a class="top-link" href="#certificates">View certificates <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">LEARNING & ACHIEVEMENTS</p>
+      <h1>Certificates<span>.</span></h1>
+      <p class="intro-text">A collection of courses, workshops, and learning experiences.</p>
+      <div class="intro-line"></div>
+      <p class="count"><strong>03</strong> certificates</p>
+    </section>
+
+    <section class="certificate-section" id="certificates">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE COLLECTION</p>
+          <h2>Proof of progress</h2>
+        </div>
+        <p class="section-note">Select any certificate to view it in detail.</p>
+      </div>
+
+      <div class="certificate-grid">
+        <article class="certificate-card">
+          <button class="preview-button" type="button" data-image="assets/introduction-to-python.jpg" data-title="Introduction to Python" aria-label="View Introduction to Python certificate">
+            <img src="assets/introduction-to-python.jpg" alt="Certificate of Achievement for Introduction to Python">
+            <span class="view-overlay">View certificate <span>↗</span></span>
+          </button>
+          <div class="card-info">
+            <div><p class="card-type">ONLINE COURSE</p><h3>Introduction to Python</h3><p class="issuer">365 DataScience</p></div>
+            <span class="card-number">01</span>
+          </div>
+        </article>
+
+        <article class="certificate-card">
+          <button class="preview-button" type="button" data-image="assets/project-management-tool.jpg" data-title="Project Management Tool" aria-label="View Project Management Tool certificate">
+            <img src="assets/project-management-tool.jpg" alt="Certificate of Participation in Project Management Tool workshop at AIUB">
+            <span class="view-overlay">View certificate <span>↗</span></span>
+          </button>
+          <div class="card-info">
+            <div><p class="card-type">WORKSHOP</p><h3>Project Management Tool</h3><p class="issuer">AIUB · 3 August 2026</p></div>
+            <span class="card-number">02</span>
+          </div>
+        </article>
+
+        <article class="certificate-card">
+          <button class="preview-button" type="button" data-image="assets/software-requirement-engineering-seminar.jpg" data-title="Seminar on Software Requirement Engineering" aria-label="View Software Requirement Engineering seminar certificate">
+            <img src="assets/software-requirement-engineering-seminar.jpg" alt="Certificate of Participation in Seminar on Software Requirement Engineering: Industry Practices at AIUB">
+            <span class="view-overlay">View certificate <span>↗</span></span>
+          </button>
+          <div class="card-info">
+            <div><p class="card-type">SEMINAR</p><h3>Software Requirement Engineering</h3><p class="issuer">AIUB · 13 August 2026</p></div>
+            <span class="card-number">03</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p> Farjana Pushon 2026<span></span></p>
+    <p>Certificates &amp; achievements</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="Certificate preview">
+      <div class="lightbox-top">
+        <p id="lightbox-title">Certificate preview</p>
+        <div class="lightbox-actions">
+          <a id="download-link" href="#" download>Download ↧</a>
+          <button class="close-button" id="close-lightbox" type="button" aria-label="Close preview">×</button>
+        </div>
+      </div>
+      <img id="lightbox-image" src="" alt="">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
